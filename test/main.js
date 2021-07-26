@@ -65,4 +65,10 @@ $(document).ready(function() {
 		$('.btn-next').addClass('btn-next_active btn-shine');
 	});
 
+	$('.pick-item__digit').on('focus', function(event) {
+		event.preventDefault();
+		$('.btn-next-container').addClass('btn-next-container_active');
+		$('.btn-next').addClass('btn-next_active btn-shine');
+	});
+
 });
